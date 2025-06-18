@@ -1312,4 +1312,33 @@ input[type="text"] {
     border-radius: 30px; }
 
 .js .animate-box {
-  opacity: 0; }
+  opacity: 0;
+}
+
+@media (max-width: 767px) {
+  .col-md-5 .about-img {
+    max-width: 220px;
+    width: 80vw;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+#lightbox-modal {
+  position: fixed !important;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999;
+  background: rgba(0,0,0,0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+body.lightbox-open {
+  overflow: hidden;
+}
